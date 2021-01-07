@@ -1,7 +1,22 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'Wilson',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: true,
+    },
+    {
+      name: 'Annie',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: '1',
       name: 'Aloe Jelly',
       category: 'Beauty',
       image: '/images/aloe-jelly.png',
@@ -13,7 +28,6 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '2',
       name: 'Aloe Soap',
       category: 'Beauty',
       image: '/images/aloe-soap.png',
@@ -25,7 +39,6 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '3',
       name: 'Bose Waterproof Speaker',
       category: 'Beauty',
       image: '/images/bose-waterproof-speaker.png',
@@ -37,7 +50,6 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '4',
       name: 'Derma Sunscreen',
       category: 'Beauty',
       image: '/images/derma-sunscreen.png',
@@ -49,7 +61,6 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '5',
       name: 'Digital Air Fryer',
       category: 'Beauty',
       image: '/images/digital-air-fryer.png',
@@ -61,7 +72,6 @@ const data = {
       description: 'high quality product',
     },
     {
-      _id: '6',
       name: 'Dutchman Honey',
       category: 'Beauty',
       image: '/images/dutchman-honey.png',
