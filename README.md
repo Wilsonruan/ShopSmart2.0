@@ -16,10 +16,6 @@ Shop Smart is continually striving to provide the highest quality products and s
 - Health and Wellness
 - Beauty and Cosmetics
 
-### Logo
-
-![Logo](./client/public/ShopSmart.png)
-
 ## Table of contents
 
 * [Features](#features)
